@@ -12,7 +12,7 @@ body {
 
 .hero {
   background: rgb(27, 27, 27);
-  border-bottom: 1px solid var(--branding-color);
+
   padding: 200px 20px;
   text-align: center;
 }
@@ -43,8 +43,9 @@ body {
 }
 .btn-branding {
   border-radius: 50px;
-  color: var(--secondary-color);
   background: rgb(91, 51, 176, 0.7);
+  box-shadow: 5px 5px 20px 10px rgb(91, 51, 176, 0.2);
+  color: var(--secondary-color);
   font-family: var(--default-font-family);
   font-size: 18px;
   font-weight: 500;
@@ -58,8 +59,38 @@ body {
   color: var(--secondary-color);
   transform: scale(1.1);
 }
+.skillset {
+  background: var(--branding-color);
+  color: var(--secondary-color);
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0;
+  padding: 40px 0;
+  text-align: center;
+}
 .woman-coding {
   background: rgb(27, 27, 27);
-  padding: 50px 20px;
+  padding: 80px 10px;
   text-align: center;
+}
+
+.skill-icons-container {
+  background: var(--branding-color);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  grid-gap: 5px;
+  padding: 80px 40px 50px 40px;
+}
+.icon {
+  text-align: center;
+  padding-top: 20px;
+}
+.icon:hover {
+  transform: scale(1.3);
+}
+.icon p {
+  color: var(--secondary-color);
+  font-size: 12px;
+  font-weight: 500;
+  margin-top: 15px;
 }
