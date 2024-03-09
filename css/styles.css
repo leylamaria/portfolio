@@ -1,6 +1,6 @@
 :root {
-  --branding-color: rgb(91, 51, 176);
-  --secondary-color: rgb(241, 247, 254);
+  --branding-color: #5b33b0;
+  --secondary-color: #f1f7fe;
   --background-color: rgb(27, 27, 27);
   --default-font-family: "Montserrat", sans-serif;
   --secondary-font-family: "Roboto", sans-serif;
@@ -10,7 +10,14 @@ body {
   color: var(--branding-color);
   font-family: var(--default-font-family);
 }
-
+.navbar {
+  background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+}
+.nav-link {
+  color: var(--background-color);
+  font-size: 18px;
+  font-weight: 600;
+}
 .hero {
   background: var(--background-color);
   padding: 200px 0;
@@ -39,7 +46,7 @@ body {
 .btn-branding {
   border-radius: 50px;
   background: rgb(91, 51, 176, 0.7);
-  box-shadow: 5px 5px 20px 10px rgb(91, 51, 176, 0.2);
+  box-shadow: 5px 5px 20px 10px (to top, #cd9cf2 0%, #f6f3ff 100%);
   color: var(--secondary-color);
   font-family: var(--default-font-family);
   font-size: 18px;
@@ -56,8 +63,8 @@ body {
 }
 .skillset {
   background: var(--background-color);
-  border-top: 1px solid var(--branding-color);
-  border-bottom: 1px solid var(--branding-color);
+  border-top: 2px solid var(--branding-color);
+  border-bottom: 2px solid var(--branding-color);
   color: var(--branding-color);
   font-size: 36px;
   font-weight: 600;
@@ -115,7 +122,7 @@ body {
 .img-container {
   background-color: rgba(205, 205, 205, 0.1);
   border-radius: 10px;
-  padding: 40px;
+  padding: 50px;
 }
 .project-container h2 {
   font-size: 44px;
@@ -146,15 +153,18 @@ body {
   transform: scale(1.1);
 }
 .project-description {
-  padding: 120px 60px;
+  padding: 130px 60px;
 }
 
 @media (max-width: 900px) {
+  .logo-color {
+    max-width: 130px;
+  }
   .logo {
     max-width: 150px;
   }
   .hero {
-    padding: 80px 0;
+    padding: 140px 0;
   }
   .hero h1 {
     font-size: 56px;
@@ -167,6 +177,7 @@ body {
   }
   .skillset {
     font-size: 28px;
+    padding: 20px 0;
   }
   .skill-icons-container {
     padding: 25px 15px;
