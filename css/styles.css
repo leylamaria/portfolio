@@ -1,9 +1,10 @@
 :root {
-  --branding-color: #5b33b0;
-  --secondary-color: #f1f7fe;
+  --branding-color: rgb(91, 51, 176);
+  --secondary-color: rgb(241, 247, 254);
   --background-color: rgb(27, 27, 27);
   --default-font-family: "Montserrat", sans-serif;
-  --secondary-font-family: "Roboto", sans-serif;
+  --secondary-font-family: "Outfit", sans-serif;
+  --box-shadow: 0px 0px 20px 10px rgba(241, 247, 254, 0.1);
 }
 
 body {
@@ -11,70 +12,78 @@ body {
   font-family: var(--default-font-family);
 }
 .navbar {
-  background: linear-gradient(to top, #cd9cf2 0%, #f6f3ff 100%);
+  background: var(--secondary-color);
 }
 .nav-link {
   color: var(--background-color);
   font-size: 18px;
   font-weight: 600;
 }
+.nav-link:hover {
+  color: var(--branding-color);
+}
 .hero {
   background: var(--background-color);
   padding: 200px 0;
   text-align: center;
 }
-.logo {
+.logo-white {
   max-width: 200px;
 }
 .hero h1 {
+  color: var(--branding-color);
   font-family: var(--secondary-font-family);
-  font-size: 72px;
-  font-weight: 900;
+  font-size: 86px;
+  font-weight: 700;
+  padding: 10px 10px 20px;
+  text-transform: uppercase;
 }
 
 .hero h3 {
   color: var(--secondary-color);
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 600;
 }
 .hero p {
-  color: rgb(91, 51, 176, 0.8);
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 70px;
+  color: var(--secondary-color);
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 90px;
 }
 .btn-branding {
   border-radius: 50px;
-  background: rgb(91, 51, 176, 0.7);
-  box-shadow: 5px 5px 20px 10px (to top, #cd9cf2 0%, #f6f3ff 100%);
+  background: rgba(91, 51, 176, 0.9);
+  box-shadow: var(--box-shadow);
   color: var(--secondary-color);
-  font-family: var(--default-font-family);
+  font-family: var(--secondary-font-family);
   font-size: 18px;
   font-weight: 500;
   line-height: 2;
   padding: 20px 30px;
+  text-transform: uppercase;
   transition: all 300ms ease-in-out;
 }
 .btn-branding:hover {
   background-color: var(--branding-color);
   cursor: pointer;
-  color: var(--secondary-color);
-  transform: scale(1.1);
+  color: var(--background-color);
+  transform: scale(1.2);
 }
+
 .skillset {
-  background: var(--background-color);
-  border-top: 2px solid var(--branding-color);
-  border-bottom: 2px solid var(--branding-color);
-  color: var(--branding-color);
-  font-size: 36px;
-  font-weight: 600;
+  background: var(--branding-color);
+  color: var(--secondary-color);
+  font-family: var(--secondary-font-family);
+  font-size: 100px;
+  font-weight: 700;
   margin: 0;
-  padding: 40px 0;
+  padding: 40px 0 20px;
   text-align: center;
+  text-transform: uppercase;
 }
 .woman-coding {
-  background: var(--background-color);
-  padding: 80px 20px;
+  background: var(--branding-color);
+  padding: 40px 20px;
   text-align: center;
 }
 
@@ -95,18 +104,20 @@ body {
 }
 .icon p {
   color: var(--secondary-color);
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 500;
   margin-top: 15px;
 }
+
 .project-intro {
   background-color: var(--background-color);
   color: var(--secondary-color);
-  font-size: 34px;
-  font-family: var(--default-font-family);
-  font-weight: 500;
+  font-size: 100px;
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
   margin: 0;
-  padding: 50px 20px;
+  padding: 100px 20px 50px;
+  text-transform: uppercase;
 }
 .project-container {
   background-color: var(--background-color);
@@ -114,19 +125,24 @@ body {
 }
 
 .project-container img {
+  border: 3px solid rgb(241, 247, 254, 0.1);
   border-radius: 10px;
+  box-shadow: var(--box-shadow);
   display: block;
   margin: 0 auto;
   max-width: 300px;
 }
 .img-container {
-  background-color: rgba(205, 205, 205, 0.1);
+  background-color: rgb(241, 247, 254, 0.1);
   border-radius: 10px;
   padding: 50px;
 }
 .project-container h2 {
-  font-size: 44px;
   color: var(--secondary-color);
+  font-size: var(--secondary-font-family);
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 .project-container p {
   font-size: 16px;
@@ -137,19 +153,21 @@ body {
 .btn-branding-outline {
   border-radius: 50px;
   border: 2px solid var(--secondary-color);
-  box-shadow: 5px 5px 20px 10px rgb(241, 247, 254, 0.1);
+  box-shadow: var(--box-shadow);
   color: white;
-  font-family: var(--default-font-family);
+  font-family: var(--secondary-font-family);
   font-size: 18px;
   font-weight: 500;
   padding: 20px 30px;
+  text-transform: uppercase;
   transition: all 300ms ease-in-out;
 }
 
 .btn-branding-outline:hover {
-  background-color: rgb(241, 247, 254, 0.7);
+  background-color: rgb(241, 247, 254, 0.9);
   color: var(--background-color);
   cursor: pointer;
+  font-weight: 600;
   transform: scale(1.1);
 }
 .project-description {
@@ -157,17 +175,25 @@ body {
 }
 
 @media (max-width: 900px) {
+  .nav-link {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .home {
+    margin-top: 10px;
+  }
+
   .logo-color {
     max-width: 130px;
   }
-  .logo {
+  .logo-white {
     max-width: 150px;
   }
   .hero {
     padding: 140px 0;
   }
   .hero h1 {
-    font-size: 56px;
+    font-size: 48px;
   }
   .hero h3 {
     font-size: 28px;
@@ -176,14 +202,14 @@ body {
     font-size: 22px;
   }
   .skillset {
-    font-size: 28px;
+    font-size: 44px;
     padding: 20px 0;
   }
   .skill-icons-container {
     padding: 25px 15px;
   }
   .project-intro {
-    font-size: 26px;
+    font-size: 44px;
   }
   .project-description {
     padding: 30px 0;
