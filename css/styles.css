@@ -185,7 +185,6 @@ body {
   font-family: var(--heading-font-family);
   font-size: 56px;
   font-weight: 700;
-  text-transform: lowercase;
 }
 
 .content-container img {
@@ -302,6 +301,21 @@ body {
 .content p {
   opacity: 0.6;
   margin-top: 20px;
+}
+.content-container a {
+  color: var(--secondary-color);
+  font-family: var(--default-font-family);
+  font-size: 22px;
+  font-weight: 500;
+  text-decoration: none;
+}
+.content-container a:hover {
+  text-decoration: underline;
+}
+
+.contact-icon::before {
+  font-size: 30px;
+  display: inline-block;
 }
 
 @media (max-width: 770px) {
