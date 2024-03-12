@@ -65,7 +65,8 @@ body {
   background-color: var(--branding-color);
   cursor: pointer;
   color: var(--background-color);
-  transform: scale(1.2);
+  font-weight: 600;
+  transform: scale(1.1);
 }
 
 .skillset {
@@ -203,21 +204,6 @@ body {
   margin: 0 10px 0 30px;
 }
 
-.btn-about {
-  border: 2px solid var(--secondary-color);
-  border-radius: 50px;
-  box-shadow: var(--box-shadow);
-  color: var(--secondary-color);
-  display: block;
-  margin: 90px auto 30px;
-  font-family: var(--heading-font-family);
-  font-size: 18px;
-  font-weight: 500;
-  padding: 20px 25px;
-  text-transform: uppercase;
-  transition: all 300ms ease-in-out;
-  width: 250px;
-}
 .about-education {
   color: var(--background-color);
   padding-top: 100px;
@@ -313,11 +299,6 @@ body {
   text-decoration: underline;
 }
 
-.contact-icon::before {
-  font-size: 30px;
-  display: inline-block;
-}
-
 @media (max-width: 770px) {
   .image-container {
     margin-bottom: 30px;
@@ -334,10 +315,6 @@ body {
   }
   .home {
     margin-top: 10px;
-  }
-
-  .logo-color {
-    max-width: 130px;
   }
   .logo-white {
     max-width: 150px;
