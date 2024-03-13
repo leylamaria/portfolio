@@ -22,6 +22,9 @@ body {
 .nav-link:hover {
   color: var(--branding-color);
 }
+.logo-navbar {
+  max-width: 150px;
+}
 .hero {
   background: var(--background-color);
   padding: 200px 0;
@@ -69,28 +72,26 @@ body {
   transform: scale(1.1);
 }
 
-.skillset {
+.skill-container {
   background: var(--branding-color);
+}
+.skillset {
   font-family: var(--heading-font-family);
   font-size: 100px;
   font-weight: 700;
-  margin: 0;
   padding: 40px 0 20px;
   text-align: center;
   text-transform: uppercase;
 }
 .woman-coding {
-  background: var(--branding-color);
-  padding: 40px 20px;
   text-align: center;
 }
 
 .skill-icons-container {
-  background: var(--branding-color);
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
   grid-gap: 5px;
-  padding: 50px 20px;
+  padding: 50px 0;
 }
 .icon {
   text-align: center;
@@ -278,7 +279,7 @@ body {
 }
 .content h4 {
   text-align: center;
-  margin-top: 30px;
+  margin: 40px 0 30px;
 }
 .content h4:hover {
   font-weight: 700;
@@ -366,6 +367,9 @@ footer small a:hover {
   }
   .logo-white {
     max-width: 150px;
+  }
+  .logo-navbar {
+    max-width: 100px;
   }
   .hero {
     padding: 140px 0;
