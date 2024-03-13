@@ -171,13 +171,13 @@ body {
 
 .content-container {
   background: var(--background-color);
-  padding: 180px 0 50px;
+  padding: 130px 0 30px;
 }
 .content-container h1 {
   font-family: var(--heading-font-family);
   font-size: 100px;
   font-weight: 700;
-  margin-bottom: 100px;
+  margin-bottom: 140px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -214,34 +214,24 @@ body {
   font-family: var(--heading-font-family);
   font-size: 30px;
   font-weight: 700;
-  padding: 10px;
+  padding: 15px;
   text-transform: uppercase;
 }
-.bachelor {
-  margin-left: 30px;
-}
-.languages {
-  margin-left: 30px;
-}
-.yoga {
-  margin-right: 30px;
-  text-align: end;
-}
+
 .teacher {
-  margin-right: 30px;
   text-align: end;
 }
 .about-education p {
   font-size: 24px;
   font-weight: 400;
   line-height: 1.5;
-  margin: 100px;
+  margin: 100px 0;
   text-align: center;
 }
 
 .about-images {
   background-color: var(--background-color);
-  padding: 30px 20px 50px;
+  padding: 30px 0;
 }
 
 .about-images img {
@@ -288,6 +278,7 @@ body {
 .content p {
   opacity: 0.6;
 }
+
 .contact-links {
   color: var(--secondary-color);
   font-family: var(--default-font-family);
@@ -299,7 +290,7 @@ body {
   text-decoration: underline;
 }
 footer {
-  margin: 80px 0 40px;
+  margin: 80px 0 30px;
 }
 footer .contact-box {
   background-color: rgba(255, 255, 255, 0.1);
@@ -393,6 +384,7 @@ footer small a:hover {
   .project-intro {
     font-size: 38px;
   }
+
   .project-description {
     padding: 30px 0;
     text-align: center;
@@ -444,6 +436,10 @@ footer small a:hover {
 @media (max-width: 1000px) {
   .content img {
     max-height: 300px;
+  }
+  .project-description {
+    display: block;
+    margin: 30px auto;
   }
   footer small {
     font-size: 10px;
