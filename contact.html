@@ -92,43 +92,77 @@
     </nav>
 
     <div class="content-container">
-      <h1 class="mt-2 mb-5">contact</h1>
+      <h1 class="mt-2 mb-2">contact</h1>
+      <div class="form-group">
+        <form
+          action="https://formspree.io/f/xeqyzwnn"
+          method="POST"
+          class="p-4 rounded mb-3"
+        >
+          <div class="mb-3">
+            <label class="form-label">Your name </label>
+            <input type="text" name="name" class="form-control" />
+          </div>
+          <div class="mb-3">
+            <label class="form-label"> Your email</label>
+            <input
+              type="email"
+              name="_replyto"
+              class="form-control"
+              required
+              autofocus
+            />
+          </div>
+          <div class="mb-3">
+            <label class="form-label"> Your message</label>
+            <textarea name="message" class="form-control" required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-submit">Send</button>
+        </form>
+      </div>
       <div class="contact-links-container">
-        <h2 class="fs-1 text-center mt-5">Email</h2>
-        <p class="text-center">
-          <a
-            href="mailto:info@yinarts.de"
-            class="contact-links"
-            title="Email Leyla"
-            >info@yinarts.de</a
-          >
-        </p>
-        <h2 class="fs-1 text-center mt-5">GitHub</h2>
+        <div>
+          <h2 class="contact-links-header">GitHub</h2>
 
-        <p class="text-center">
-          <a
-            href="https://github.com/leylamaria"
-            target="_blank"
-            class="contact-links"
-            title="GitHub profile"
-            >@leylamaria</a
-          >
-        </p>
+          <p>
+            <a
+              href="https://github.com/leylamaria"
+              target="_blank"
+              class="contact-links"
+              title="GitHub profile"
+              >@leylamaria</a
+            >
+          </p>
+        </div>
 
-        <h2 class="fs-1 text-center mt-5">LinkedIn</h2>
+        <div>
+          <h2 class="contact-links-header">Email</h2>
+          <p>
+            <a
+              href="mailto:info@yinarts.de"
+              class="contact-links"
+              title="Email Leyla"
+              >info@yinarts.de</a
+            >
+          </p>
+        </div>
+        <div>
+          <h2 class="contact-links-header">LinkedIn</h2>
 
-        <p class="text-center mb-5">
-          <a
-            href="https://www.linkedin.com/in/leyla-steinbrugger-623b10272/"
-            target="_blank"
-            class="contact-links"
-            title="LinkedIn profile"
-            >@leyla</a
-          >
-        </p>
+          <p>
+            <a
+              href="https://www.linkedin.com/in/leyla-steinbrugger-623b10272/"
+              target="_blank"
+              class="contact-links"
+              title="LinkedIn profile"
+              >@leylamaria</a
+            >
+          </p>
+        </div>
       </div>
       <footer>
-        <div class="social-links d-flex justify-content-center mt-5">
+        <div class="social-links d-flex justify-content-center">
           <a
             href="https://www.instagram.com/leyliji/"
             target="_blank"

@@ -189,7 +189,7 @@ body {
   text-transform: uppercase;
 }
 
-.content-container h2 {
+.my-name {
   color: var(--branding-color);
   font-family: var(--heading-font-family);
   font-size: 56px;
@@ -290,9 +290,42 @@ body {
   font-size: 18px;
 }
 
-.contact-links-container {
-  padding: 80px 0;
+.form-group {
+  width: 40%;
+  display: block;
+  margin: 100px auto;
 }
+.form-control {
+  background-color: var(--background-color);
+}
+.btn-submit {
+  border-radius: 30px;
+  background: rgba(91, 51, 176, 0.7);
+  box-shadow: var(--box-shadow);
+  display: block;
+  margin: 50px auto 10px;
+  color: var(--secondary-color);
+  font-family: var(--heading-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 2;
+  padding: 15px 30px;
+  text-transform: uppercase;
+  transition: all 200ms ease-in-out;
+}
+.btn-submit:hover {
+  background-color: var(--branding-color);
+  cursor: pointer;
+  color: var(--background-color);
+  font-weight: 600;
+  transform: scale(1.1);
+}
+
+.contact-links-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .contact-links {
   color: var(--secondary-color);
   font-family: var(--default-font-family);
@@ -302,6 +335,12 @@ body {
 }
 .contact-links:hover {
   text-decoration: underline;
+}
+.contact-links-header {
+  color: var(--branding-color);
+  font-size: 30px;
+  font-weight: 700;
+  text-align: center;
 }
 footer {
   margin: 80px 0 30px;
@@ -361,8 +400,13 @@ footer small a:hover {
     display: block;
     margin: 0 20px;
   }
-  .contact-links-container {
-    padding: 0;
+
+  .contact-links {
+    font-size: 12px;
+    margin: 10px 20px;
+  }
+  .contact-links-header {
+    font-size: 16px;
   }
 }
 @media (max-width: 900px) {
@@ -383,7 +427,7 @@ footer small a:hover {
     padding: 140px 0;
   }
   .hero h1 {
-    font-size: 48px;
+    font-size: 46px;
   }
   .hero h3 {
     font-size: 28px;
@@ -409,7 +453,7 @@ footer small a:hover {
     font-size: 32px;
   }
   .content-container {
-    padding-top: 140px;
+    padding-top: 100px;
   }
 
   .balancing-life {
@@ -421,7 +465,7 @@ footer small a:hover {
     margin-bottom: 50px;
   }
 
-  .content-container h2 {
+  .my-name {
     font-size: 46px;
     font-weight: 700;
     margin-top: 40px;
@@ -449,6 +493,11 @@ footer small a:hover {
 
   .about-images h3 {
     font-size: 66px;
+  }
+
+  .form-group {
+    width: 70%;
+    margin: 50px auto;
   }
 }
 
