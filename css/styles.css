@@ -1,7 +1,7 @@
 :root {
   --branding-color: rgb(91, 51, 176);
   --secondary-color: #ffffff;
-  --background-color: rgb(27, 27, 27);
+  --background-color: #1b1b1b;
   --default-font-family: "Montserrat", sans-serif;
   --heading-font-family: "Outfit", sans-serif;
   --box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.1);
@@ -78,7 +78,7 @@ body {
 }
 
 .skill-container {
-  background: var(--branding-color);
+  background: var(--background-color);
 }
 .skillset {
   font-family: var(--heading-font-family);
@@ -89,7 +89,9 @@ body {
   text-transform: uppercase;
 }
 .woman-coding {
-  text-align: center;
+  display: block;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 .skill-icons-container {
@@ -99,8 +101,8 @@ body {
   padding: 50px 0;
 }
 .icon {
-  text-align: center;
   padding-top: 20px;
+  text-align: center;
   transition: all 300ms ease-in-out;
 }
 .icon:hover {
