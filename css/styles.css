@@ -41,7 +41,13 @@ body {
   margin: 50px 0 0;
 }
 .hero h1 {
-  color: rgb(91, 51, 176);
+  background: linear-gradient(
+    111.7deg,
+    rgb(99, 16, 141) 29.9%,
+    rgb(7, 140, 160) 95%
+  );
+  background-clip: text;
+  color: transparent;
   font-size: 111px;
   font-weight: 800;
   margin: 0 0 20px;
@@ -61,7 +67,7 @@ body {
 }
 .btn-branding {
   border-radius: 50px;
-  background: rgba(91, 51, 176, 0.9);
+  background: rgba(91, 51, 176, 0.8);
   box-shadow: var(--box-shadow);
   color: var(--secondary-color);
   font-family: var(--heading-font-family);
